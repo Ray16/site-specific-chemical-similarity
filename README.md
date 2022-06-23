@@ -1,6 +1,13 @@
 # site-specific-chemical-similarity
 This repository contains code for calculating site-specific chemical similarity for any materials system with a given materials property.
 
+The following packages are needed for running the code (all can be installed using `pip install`):
+- scipy
+- pandas
+- seaborn
+- matplotlib
+- pymatgen
+
 The <em>data.csv</em> file should contain the following two columns:
 1. `formula`, the chemical formula of the compound
 2. `property`, the materials property of interest
