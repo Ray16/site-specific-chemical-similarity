@@ -9,8 +9,8 @@ The following packages are needed for running the code (all can be installed usi
 - pymatgen
 
 The <em>data.csv</em> file should contain the following two columns:
-1. `formula`, the chemical formula of the compound
-2. `property`, the materials property of interest
+1. `formula`, chemical formulae of compounds
+2. `property` the materials property of interest
 
 ## Running the script
 The script can be run using just one line of code:
