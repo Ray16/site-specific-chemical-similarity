@@ -16,7 +16,7 @@ The <em>data.csv</em> file should contain the following two columns:
 The script can be run using one line of code:
 
 ```
-python chemical_similarity.py --data data.csv --site_names M1_M2_A_X
+python calculate_chemical_similarity.py --data data.csv --site_names M1_M2_A_X
 ```
 
 The example code above takes in <em>data.csv</em> as input and outputs the chemical similarity heatmaps for each unique site.
