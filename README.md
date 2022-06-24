@@ -1,7 +1,7 @@
 # Site-specific Chemical Similarity
 This repository contains code for calculating site-specific chemical similarity for any materials system with given materials property.
 
-The following packages are needed for running the code:
+To properly run the code, the following packages are needed:
 - scipy
 - pandas
 - seaborn
