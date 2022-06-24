@@ -1,4 +1,4 @@
-# Site-specific Chemical Similarity
+# Site-specific chemical similarity
 This repository contains code for calculating site-specific chemical similarity for any materials system with given materials property.
 
 To properly run the code, the following packages are needed:
