@@ -1,7 +1,7 @@
 # Site-specific Chemical Similarity
-This repository contains code for calculating site-specific chemical similarity for any materials system with a given materials property.
+This repository contains code for calculating site-specific chemical similarity for any materials system with given materials property.
 
-The following packages are needed for running the code (all can be installed using `pip install`):
+The following packages are needed for running the code:
 - scipy
 - pandas
 - seaborn
@@ -13,12 +13,13 @@ The <em>data.csv</em> file should contain the following two columns:
 2. `property`, the materials property of interest
 
 ## Running the script
-The script can be run using just one line of code:
+The script can be run using one line of code:
 
 ```
 python chemical_similarity.py --data data.csv --site_names M1_M2_A_X
 ```
-The example script above takes in <em>data.csv</em> as input and output the chemical similarity heatmaps for unique each site (site_M1, site_M2, site_A and site_X).
+
+The example code above takes in <em>data.csv</em> as input and output the chemical similarity heatmaps for unique each site (site_M1, site_M2, site_A and site_X).
 
 The two arguments that need to specified here are:
 
