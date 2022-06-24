@@ -27,4 +27,4 @@ The two arguments that need to be specified are:
 
 2. `--site_names`, underscore(\_) separated string for the names of all unique sites. (e.g. `A_B_X` for perovskites and `X_Y_Z` for half/full heuslers.)
 
-Note: The current version of code only works when the materials properties are present for **all** elemental combinations.
+Note: The current version of code only works when the materials property values are present for **all** elemental combinations.
