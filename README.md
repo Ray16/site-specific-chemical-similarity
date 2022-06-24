@@ -1,4 +1,4 @@
-# site-specific-chemical-similarity
+# Site-specific Chemical Similarity
 This repository contains code for calculating site-specific chemical similarity for any materials system with a given materials property.
 
 The following packages are needed for running the code (all can be installed using `pip install`):
