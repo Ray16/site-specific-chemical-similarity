@@ -1,5 +1,7 @@
 # Site-specific chemical similarity
-Visualization of site-specific chemical similarity for a given materials system.
+Tool for visualizing site-specific chemical similarity for a given materials system.
+The output are heatmaps for each atomic site, where red indicates high similarity and blue indicates low similarity.
+
 
 ## Requirements
 - scipy
@@ -8,19 +10,16 @@ Visualization of site-specific chemical similarity for a given materials system.
 - matplotlib
 - pymatgen
 
-The <em>data.csv</em> file is needed, which contains two columns:
-1. `formula`, chemical formulae of compounds
-2. `property`, the materials property of interest
+<em>data.csv</em> is the only file needed and should be placed in the same directory as the script. It should contain the following two columns:
+1. `formula` - chemical formulae of compounds
+2. `property` - materials property of interest
 
 ## Usage
+
 
 ```
 python calculate_chemical_similarity.py --data data.csv --site_names A_B_X
 ```
-
-The example code above takes in <em>data.csv</em> as input and outputs the chemical similarity heatmaps for each unique site.
-
-The two arguments are needed to be specified:
 
 1. `--data`, name of <em>.csv</em> file
 
