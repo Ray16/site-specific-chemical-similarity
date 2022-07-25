@@ -1,28 +1,29 @@
 # Site-specific chemical similarity
-Tool for visualizing site-specific chemical similarity for a given materials system. 
-
+Tool for visualizing the chemical similarity for a given materials system at each unique atomic site.
 
 ## Requirements
+To run the script, Python 3.7 and the following packages are needed.
 - scipy
 - pandas
 - seaborn
 - matplotlib
 - pymatgen
 
-## Input
-<em>data.csv</em> is the only file needed and should be placed in the same directory as the script. It should contain the following two columns:
+## Inputs
+The input to the script is data file <em>data.csv</em>, which contains two columns:
 1. `formula` - chemical formulae of compounds
 2. `property` - materials property values
 
-## Output
-Heatmaps representing site-specific chemical similarities for each atomic site. Red regions indicate high similarity and blue regions indicate low similarity.
+## Outputs
+Heatmaps representing site-specific chemical similarities at each atomic site, with red regions indicating high similarity and blue regions indicating low similarity.
 
 ## Usage
 
 ```
-python calculate_chemical_similarity.py --data data.csv --site_names A_B_X
+python calc_similarity.py --site A_B_3
 ```
 
-1. `--data` - name of <em>.csv</em> file
+Where the argument after flag `--site` is the underscore(\_) separated string of the names of all unique sites. For example, `A_B_X` for perovskites and `X_Y_Z` and `X_2_Y_Z` for half/full heuslers.
 
-2. `--site_names` - underscore(\_) separated string of the names of all unique sites. (e.g. `A_B_X` for perovskites and `X_Y_Z` for half/full heuslers.)
+## Example
+An example <em>data.csv<em> file is provided with the script, which contains the chemical formulae and convex hull energies of compounds with <em>D0_3<em> prototype.
