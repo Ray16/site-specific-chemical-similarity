@@ -26,4 +26,4 @@ python calc_similarity.py --site A_B_3
 Where the argument after flag `--site` is the underscore(\_) separated string of the names of all unique sites. For example, `A_B_X` for perovskites and `X_Y_Z` and `X_2_Y_Z` for half/full heuslers.
 
 ## Example
-An example <em>data.csv<em> file is provided with the script, which contains the chemical formulae and convex hull energies of compounds with <em>D0_3<em> prototype.
+An example <em>data.csv</em> file is provided with the script, which contains the chemical formulae and convex hull energies of compounds with <em>D0_3</em> prototype.
