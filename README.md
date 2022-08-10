@@ -31,5 +31,7 @@ The argument `M1_M2_A_X` after flag `--site` should be underscore(\_) separated 
 
 ## Contact
 Ruijie Zhu
+
 Department of Materials Science and Engineering, Northwestern University
+
 ruijiezhu2021@u.northwestern.edu
