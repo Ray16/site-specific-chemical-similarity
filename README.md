@@ -1,8 +1,8 @@
 # Site-specific chemical similarity
-Tool for visualizing the chemical similarity for a given materials system at each unique atomic site.
+A tool for visualizing the chemical similarity of a given materials system at each unique atomic site.
 
 ## Requirements
-To run the script, Python 3.7 and the following packages are needed.
+To run the scripts, Python3.7 with the following packages need to be installed.
 - scipy
 - pandas
 - seaborn
@@ -10,12 +10,13 @@ To run the script, Python 3.7 and the following packages are needed.
 - pymatgen
 
 ## Inputs
-The input to the script is data file <em>data.csv</em>, which contains two columns:
-1. `formula` - chemical formulae of compounds
-2. `property` - materials property values
+A data file called <em>data.csv</em> is needed, which contains two columns:
+1. `formula` - the chemical formulae of compounds
+2. `property` - vales for the target materials property
 
 ## Outputs
-Heatmaps representing site-specific chemical similarities at each atomic site, with red regions indicating high similarity and blue regions indicating low similarity.
+1. `df_sim` - This folder contains similarity matrices with rows and columns ordered by Mendeleev Number
+2. `heatmaps` - This folder contains heatmaps representing similarities at each atomic site. Red regions indicate high similarity, blue regions indicate low similarity.
 
 ## Usage
 
@@ -23,7 +24,8 @@ Heatmaps representing site-specific chemical similarities at each atomic site, w
 python calc_similarity.py --site A_B_3
 ```
 
-Where the argument after flag `--site` is the underscore(\_) separated string of the names of all unique sites. For example, `A_B_X` for perovskites and `X_Y_Z` and `X_2_Y_Z` for half/full heuslers.
+The argument after flag `--site` should be underscore(\_) separated string of the names of all unique sites.
+For example, `A_B_X` for perovskites and `X_Y_Z` and `X_2_Y_Z` for half/full heuslers.
 
-## Example
-An example <em>data.csv</em> file is provided with the script, which contains the chemical formulae and convex hull energies of compounds with <em>D0_3</em> prototype.
+## Example Data
+The example <em>data.csv</em> file contains chemical formulae and convex hull energies of compounds of i-MAX phases (in-plane ordered MAX phases).
