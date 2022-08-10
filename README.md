@@ -21,11 +21,15 @@ A data file called <em>data.csv</em> is needed, which contains two columns:
 ## Usage
 
 ```
-python calc_similarity.py --site A_B_3
+python calc_similarity.py --site M1_M2_A_X
 ```
 
-The argument after flag `--site` should be underscore(\_) separated string of the names of all unique sites.
-For example, `A_B_X` for perovskites and `X_Y_Z` and `X_2_Y_Z` for half/full heuslers.
+The argument `M1_M2_A_X` after flag `--site` should be underscore(\_) separated string of the names of all unique sites, and should be changed accordingly. For example, `A_B_X_3` for perovskites and `X_Y_Z` / `X_2_Y_Z` for half/full heuslers.
 
-## Example Data
-The example <em>data.csv</em> file contains chemical formulae and convex hull energies of compounds of i-MAX phases (in-plane ordered MAX phases).
+## Example Dataset
+<em>data.csv</em> contains chemical formulae and convex hull energies of i-MAX phases (in-plane ordered MAX phases).
+
+## Contact
+Ruijie Zhu
+Department of Materials Science and Engineering, Northwestern University
+ruijiezhu2021@u.northwestern.edu
