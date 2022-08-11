@@ -14,11 +14,11 @@ Python3.7 with the following packages need to be installed.
 1. `formula` - the chemical formulae of compounds
 2. `property` - values for targeted materials property
 
-Both `formula` and `property` columns should contain values for all elemental combinations, which could be either exhaustic DFT calculation results or ML predicted values. Missing values may result in .
+Both `formula` and `property` columns should contain values for *all* elemental combinations, which could be obtained from exhaustic HT-DFT calculations or ML predictions. Missing values may result in incorrect results.
 
 ## Outputs
 Running the script will generate two folders:
-1. `df_sim` - similarity matrices for elements at each atomic site with rows and columns ordered by increasing Mendeleev Number
+1. `df_sim` - similarity matrices for elements at each atomic site with rows and columns ordered by increasing Mendeleev number
 2. `heatmaps` - heatmaps of similarity matrices of elements at each atomic site. Red regions indicate high similarity, blue regions indicate low similarity.
 
 ## Usage
