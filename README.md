@@ -1,8 +1,8 @@
 # Site-specific chemical similarity
-A tool for visualizing the chemical similarity of a given materials system at each unique atomic site.
+Tool for the calculation and visualization of chemical similarity metrices of elements for a given materials system at each unique atomic site. The resulting similarity matrices may serve as a basis for prototype-substitution method based materials discovery.
 
 ## Requirements
-To run the scripts, Python3.7 with the following packages need to be installed.
+Python3.7 with the following packages need to be installed.
 - scipy
 - pandas
 - seaborn
@@ -10,13 +10,16 @@ To run the scripts, Python3.7 with the following packages need to be installed.
 - pymatgen
 
 ## Inputs
-A data file called <em>data.csv</em> is needed, which contains two columns:
+<em>data.csv</em>, which contains two columns:
 1. `formula` - the chemical formulae of compounds
-2. `property` - vales for the target materials property
+2. `property` - values for targeted materials property
+
+Both `formula` and `property` columns should contain values for all elemental combinations, which could be either exhaustic DFT calculation results or ML predicted values. Missing values may result in .
 
 ## Outputs
-1. `df_sim` - This folder contains similarity matrices with rows and columns ordered by Mendeleev Number
-2. `heatmaps` - This folder contains heatmaps representing similarities at each atomic site. Red regions indicate high similarity, blue regions indicate low similarity.
+Running the script will generate two folders:
+1. `df_sim` - similarity matrices for elements at each atomic site with rows and columns ordered by increasing Mendeleev Number
+2. `heatmaps` - heatmaps of similarity matrices of elements at each atomic site. Red regions indicate high similarity, blue regions indicate low similarity.
 
 ## Usage
 
@@ -24,10 +27,10 @@ A data file called <em>data.csv</em> is needed, which contains two columns:
 python calc_similarity.py --site M1_M2_A_X
 ```
 
-The argument `M1_M2_A_X` after flag `--site` should be underscore(\_) separated string of the names of all unique sites, and should be changed accordingly. For example, `A_B_X_3` for perovskites and `X_Y_Z` / `X_2_Y_Z` for half/full heuslers.
+The argument `M1_M2_A_X` after flag `--site` should be underscore(\_) separated string of including the site names of all unique sites, and should be changed accordingly. For example, `A_B_X` for perovskites and `X_Y_Z` for full heuslers.
 
 ## Example Dataset
-<em>data.csv</em> contains chemical formulae and convex hull energies of i-MAX phases (in-plane ordered MAX phases).
+<em>data.csv</em> contains the chemical formulae and convex hull energies of in-plane ordered MAX phases (i-MAX phases).
 
 ## Contact
 Ruijie Zhu
